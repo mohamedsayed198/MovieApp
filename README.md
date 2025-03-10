@@ -13,9 +13,7 @@ This repository contains a full-stack movie management application that consists
   ## Update Application Properties:
   **In the `springboot` project directory:** 
       -edit `src/main/resources/application.properties` with your MySQL configuration:
-      -spring.datasource.url=jdbc:mysql://localhost:3306/moviedb?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC
-      -spring.datasource.username=myuser
-      -spring.datasource.password=mypassowrd
+      spring.datasource.url=jdbc:mysql://localhost:3306/moviedb?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC spring.datasource.username=myuser spring.datasource.password=mypassword
 
 # Build and Run the Spring Boot Application
     -Open a terminal and navigate to the `springboot` directory.
