@@ -1,0 +1,8 @@
+<div class="center-container">
+  <h1>Angular Movie App</h1>
+
+  <button *ngIf="isLoggedIn()" (click)="logout()">Sign Out</button>
+
+  <hr />
+  <router-outlet></router-outlet>
+</div>

@@ -1,0 +1,37 @@
+<div class="center-container">
+  <h2>Admin Dashboard</h2>
+
+  <div>
+    <input [(ngModel)]="searchQuery" placeholder="Search movies..." />
+    <button (click)="onSearch()">Search</button>
+  </div>
+
+
+  <div *ngIf="searchResults.length > 0">
+    <h3>Search Results</h3>
+    <ul class="movie-list">
+      <li *ngFor="let movie of searchResults" class="movie-item">
+        <img [src]="movie.Poster" alt="{{ movie.Title }}" class="movie-poster" />
+        <span class="movie-info">
+          {{ movie.Title }} ({{ movie.Year }})
+        </span>
+        <button (click)="onAdd(movie)">Add to DB</button>
+      </li>
+    </ul>
+  </div>
+
+
+  <div>
+    <h3>Local Movies in DB</h3>
+      <ul class="movie-list">
+        <li *ngFor="let movie of localMovies" class="movie-item">
+          <img [src]="movie.posterUrl" alt="{{ movie.title }}" class="movie-poster" />
+          <span class="movie-info">
+            {{ movie.title }} ({{ movie.year }})
+          </span>
+          <button (click)="onDelete(movie.id)">Delete</button>
+        </li>
+      </ul>
+  </div>
+
+ </div>
