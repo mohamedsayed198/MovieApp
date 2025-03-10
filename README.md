@@ -6,7 +6,7 @@ This repository contains a full-stack movie management application that consists
   - **Maven** (for building the Spring Boot application)
   - **Node.js and npm**
   - **Angular CLI** (install globally using `npm install -g @angular/cli`)
-  - **MySQL Server**
+  - **MySQL Server** (set the port to 3306)
 
 
 # Configurations:
@@ -14,8 +14,9 @@ This repository contains a full-stack movie management application that consists
   **In the `springboot` project directory:**
   #
       -edit `src/main/resources/application.properties` with your MySQL configuration:
-        --spring.datasource.url=jdbc:mysql://localhost:3306/movie_db?createDatabaseIfNotExist=true 
-        --spring.datasource.username=myuser spring.datasource.password=mypassword
+        spring.datasource.url=jdbc:mysql://localhost:3306/movie_db?createDatabaseIfNotExist=true 
+        spring.datasource.username=youUsername 
+        spring.datasource.password=YouPassword
 
 # Build and Run the Spring Boot Application
     -Open a terminal and navigate to the `springboot` directory.
@@ -32,7 +33,7 @@ This repository contains a full-stack movie management application that consists
           passwrod:  user123
     -The backend will be available at http://localhost:8080
 
-# Build and Run the Spring Boot Application
+# Build and Run the Angular Frontend
     -Open a cmd as an admnistrator and navigate to the `angular` directory.
     -Install npm dependencies:
        npm install
