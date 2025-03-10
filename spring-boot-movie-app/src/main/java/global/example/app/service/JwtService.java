@@ -23,8 +23,8 @@ import java.util.function.Function;
 public class JwtService {
     private Logger logger = LoggerFactory.getLogger(AuthenticationService.class);
 
-    @Value("${SECRET.KEY}")
-    private String SECRET_KEY;
+    
+    private String SECRET_KEY = "A3C6B8F4E9C8A19E3F8C4B5D1A4E9B79B0A1D3C1E8F7B4C4F3D2A1F2E8D6B2C9";
     public String extractUsername (String jwtToken) {
         return extractClaim (jwtToken, Claims :: getSubject);
     }
