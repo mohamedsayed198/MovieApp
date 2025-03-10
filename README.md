@@ -11,7 +11,7 @@ This repository contains a full-stack movie management application that consists
 
 # Configurations:
   ## Update Application Properties:
-  **In the `springboot` project directory:**
+  - **In the `springboot` project directory:**
   #
       -edit `src/main/resources/application.properties` with your MySQL configuration:
         spring.datasource.url=jdbc:mysql://localhost:3306/movie_db?createDatabaseIfNotExist=true 
