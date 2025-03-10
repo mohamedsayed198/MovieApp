@@ -13,8 +13,8 @@ import java.util.List;
 @Service
 public class OmdbService {
 
-    @Value("omdb.api.key")
-    private String API_KEY;
+    
+    private String API_KEY = "8976e755";
 
     private final RestTemplate restTemplate;
 
